@@ -1,0 +1,18 @@
+<section class="container">
+    <div class="row m-0" id="card-id">
+        
+            <div *ngFor="let product of productList" class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center justify-content-lg-between">
+                <div class="card mb-3" id="card" style="width: 18rem;">
+                    <img src="{{product.flags.png}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                    <h4 class="text-white mb-4">{{product.name.common}}</h4>
+                    <p class="text-white"><strong>Population: </strong>{{product.population}}</p>
+                    <p class="text-white"><strong>Región: </strong>{{product.region}}</p>
+                    <p class="text-white"><strong>Capital: </strong>{{product.capital}}</p>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</section>
+    

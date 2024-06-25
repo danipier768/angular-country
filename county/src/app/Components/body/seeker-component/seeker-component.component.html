@@ -1,0 +1,28 @@
+<section class="container-sm">  
+    <div class="row">
+        <div class="col-12 ">
+          <div class="row mb-5">
+            <div class="col-12 col-md-6 ">
+              <nav class="navbar p-0 mt-4">
+                  <div class="container-fluid ps-0" id="busqueda">
+                    <form class="d-flex button-busqueda p-2 w-75 rounded-2" role="search">
+                      <button class="btn btn-outline-success border-0" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+                      </button>
+                      <input (input)="OninputChange($event)" class="form-control me-2 border-0 text-white" id="input-princ" type="search" placeholder="Search for a country" aria-label="Search">
+                    </form>
+                  </div>
+                </nav>
+            </div>
+            <div  class="col-12 col-md-6 mt-4 justify-content-lg-end justify-content-start">
+              <div class="seletor d-flex justify-content-lg-end">
+                <select (change)="onSelectChange($event)"  id="option-id" class="color-selector ps-2 pe-4 py-3 border-0 rounded-3">
+                    <option value="ef">Filter by region</option>
+                    <option *ngFor="let repeat of arrayRegions" [value]="repeat">{{repeat}}</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div> 
+  </section>

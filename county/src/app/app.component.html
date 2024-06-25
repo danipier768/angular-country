@@ -1,0 +1,14 @@
+
+<div>
+    <app-header-comoponent></app-header-comoponent>
+    <app-seeker-component
+    (searchChange)="onSearchChange($event)"
+    (filterReg)="regFilter($event)"
+    [repetRegion]="valueRegions"
+    ></app-seeker-component>
+    <app-card-component
+    [searchValue]="valueSearch"  
+    []
+    (sinRep)="repetNot($event)">
+</app-card-component>
+</div>
