@@ -30,7 +30,6 @@ export class SeekerComponentComponent implements OnChanges{
     const selectElement = event.target as HTMLSelectElement;
     this.selectedRegion = selectElement.value;
     this.filterReg.emit(this.selectedRegion)
-    console.log(this.selectedRegion);
   }
 
 }
