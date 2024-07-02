@@ -1,6 +1,6 @@
 <section class="container">
     <div class="row m-0" id="card-id">
-        
+        <ng-container *ngIf="productList && productList.length > 0; else ngResults">
             <div *ngFor="let product of productList" class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 d-flex justify-content-center justify-content-lg-between">
                 <div class="card mb-3" id="card" style="width: 18rem;">
                     <img src="{{product.flags.png}}" class="card-img-top" alt="">
@@ -12,7 +12,12 @@
                     </div>
                 </div>
             </div>
-            
+        </ng-container >
+        <ng-template #ngResults>
+            <div class="d-flex justify-content-center align-items-center text-white">
+                <h1>No se encontro el resultado</h1>
+            </div>
+        </ng-template>
     </div>
 </section>
     
