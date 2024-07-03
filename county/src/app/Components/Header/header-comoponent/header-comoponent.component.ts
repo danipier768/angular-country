@@ -22,14 +22,17 @@ export class HeaderComoponentComponent implements OnInit {
     onButtonClick(): void{
 
       if (this.showContent ===  true) {
-        this.document.body.classList.add('my-body-class');
+        this.document.body.classList.add('body-ligth');
         this.textLabel = 'Dark Mode'
         this.showContent = false
+        
       }else{
-        this.document.body.classList.remove('my-body-class');
+        this.document.body.classList.remove('body-ligth');
         this.textLabel = 'Ligth Mode'
         this.showContent = true
       }
+
+
       
     }
 

@@ -1,3 +1,11 @@
 #card{
     background-color: #2b3944;
 }
+::ng-deep .body-ligth{
+    #card{
+        background-color: #bbbbbb !important;
+    }
+    .text-white {
+        color: black !important;
+    }
+}

@@ -6,4 +6,28 @@
     .button{
         background-color: #2b3944;
     }
+    svg{
+        display: none;
+    }
+}
+
+::ng-deep .body-ligth{
+
+        .container-head{
+            background-color: #bbbbbb;
+            h1{
+                color: black !important ;
+            }
+            .image{
+                display: none;
+            }
+            svg{
+                display: flex !important;
+                align-items: center;
+            }
+            .button{
+                background-color: #bbbbbb !important;
+                color: black !important;
+            } 
+        }
 }

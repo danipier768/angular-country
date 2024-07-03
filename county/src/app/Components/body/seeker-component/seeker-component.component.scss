@@ -8,10 +8,38 @@
     #input-princ::placeholder{
         color: white;
     }
+    .black{
+        display: none;
+    }
+
 }
 select{
     color: white;
 }
 .color-selector{
     background-color: #2b3944;
+}
+
+::ng-deep .body-ligth{
+    .button-busqueda{
+        background-color: #bbbbbb !important;
+        #input-princ{
+            background-color: #bbbbbb !important;
+        }
+        #input-princ::placeholder{
+            color: black !important;
+        }
+        .black{
+            display: flex !important;
+        }
+        .white{
+            display: none;
+        }
+    }
+    select{
+        color: black !important;
+    }
+    .color-selector{
+        background-color: #bbbbbb;
+    }
 }
